@@ -1,6 +1,6 @@
 # Terraform
 
-## Install Terraform for Ubuntu
+## [Install Terraform for Ubuntu](https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli)
 ```shell
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
