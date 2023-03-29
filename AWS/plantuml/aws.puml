@@ -1,0 +1,32 @@
+```text
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/v15.0/dist
+!include AWSPuml/AWSCommon.puml
+!include AWSPuml/AWSSimplified.puml
+!include AWSPuml/Groups/AWSCloud.puml
+!include AWSPuml/Groups/Region.puml
+!include AWSPuml/Groups/AvailabilityZone.puml
+!include AWSPuml/Groups/CorporateDataCenter.puml
+
+hide stereotype
+skinparam linetype ortho
+
+AWSCloudGroup(cloud) {
+    RegionGroup(region, "Region") {
+        AvailabilityZoneGroup(az_1, "Availability Zone 1") {
+            CorporateDataCenterGroup(datacenter1, "datacenter1")
+
+        AvailabilityZoneGroup(az_2, "Availability Zone 2") {
+        }
+
+        AvailabilityZoneGroup(az_3, "Availability Zone 3") {
+        }
+    }
+    
+}
+
+Lay_R(az_1, az_2)
+Lay_R(az_2, az_3)
+@enduml
+```

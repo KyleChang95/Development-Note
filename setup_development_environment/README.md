@@ -1,23 +1,20 @@
-# How to setup development environment
+# Setup development environment
 
-## On Windows Host
+## 1. Create a SSH key
+```bash
+ssh-keygen -t ed25519`
+```
 
-### 1. Install `Windows Terminal` in Windows Store App
-
-### 2. Create a SSH key for development (if you don't have one)
-- Open `Windows Terminal`
-- Run `ssh-keygen -t ed25519` command and leave ssh passphrase as empty.
-- You should see `id_ed25519` and `id_ed25519.pub` files in `C:\Users\your-employee-number\.ssh` directory.
-
-### 3. Install VritualBox
+## 2. Install VritualBox & Extension Pack
 - https://www.virtualbox.org/wiki/Downloads
 
-### 4. Install Vagrant and plugin
+## 3. Install Vagrant and plugin
 - Vagrant:
-    - https://www.vagrantup.com/downloads
-- Plugins:
-    - [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
-        - Open `Windows Terminal` and run `vagrant plugin install vagrant-disksize` to install.
+    - download [binary](https://www.vagrantup.com/downloads), don't use homebrew
+- [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
+    ```bash
+    `vagrant plugin install vagrant-disksize`
+    ```
 
 ### 5. Install Visual Studio Code and extensions
 - VSCode
@@ -25,8 +22,6 @@
 - Extensions
     - [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
     - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-    - [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
-    - [PlantUML Previewer](https://marketplace.visualstudio.com/items?itemName=Mebrahtom.plantumlpreviewer)
     - [Markdown Plantuml Preview](https://marketplace.visualstudio.com/items?itemName=myml.vscode-markdown-plantuml-preview)
 - Ref
     - https://plantuml.com/en/
@@ -137,9 +132,10 @@ sudo apt update && sudo apt install -y git curl build-essential python3-pip libk
 
 ### 2. Setup `your` username/email for git
 ```bash
-git config --global user.name "Frist.Last"
-git config --global user.email "first.last@acer.com"
+git config --global user.name "Kyle.Chang"
+git config --global user.email "changyuchun159630@acer.com"
 git config --global core.editor "vim"
+git config --global http.sslVerify false
 ```
 
 ### 3. Install nodejs 16.x & yarn
