@@ -21,13 +21,10 @@
 
 1. Install Vagrant `2.3.4` & plugins
 	- [Vagrant](https://developer.hashicorp.com/vagrant/downloads)
-
-> [!NOTE] Download binary, don't use homebrew.
-
 	- [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
-        ```shell
-        vagrant plugin install vagrant-disksize
-        ```
+	```shell
+	vagrant plugin install vagrant-disksize
+	```
 
 1. Create VM via vagrant
     ```shell
