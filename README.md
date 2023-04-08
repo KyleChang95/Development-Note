@@ -16,13 +16,15 @@
 	- [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
 
 1. Install VritualBox `7.0.6` & extension Pack
-    - [VirtualBox](https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6-155176-OSX.dmg)
-    - [Extension Pack](https://download.virtualbox.org/virtualbox/7.0.6/Oracle_VM_VirtualBox_Extension_Pack-7.0.6a-155176.vbox-extpack)
+	- [VirtualBox](https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6-155176-OSX.dmg)
+	- [Extension Pack](https://download.virtualbox.org/virtualbox/7.0.6/Oracle_VM_VirtualBox_Extension_Pack-7.0.6a-155176.vbox-extpack)
 
 1. Install Vagrant `2.3.4` & plugins
-    - [Vagrant](https://developer.hashicorp.com/vagrant/downloads)
-        > Download binary, don't use homebrew.
-    - [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
+	- [Vagrant](https://developer.hashicorp.com/vagrant/downloads)
+
+> [!NOTE] Download binary, don't use homebrew.
+
+	- [vagrant-disksize](https://github.com/sprotheroe/vagrant-disksize)
         ```shell
         vagrant plugin install vagrant-disksize
         ```
