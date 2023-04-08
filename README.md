@@ -3,17 +3,17 @@
 ## Setup Environment
 
 1. Install Visual Studio Code and extensions
-    - [Visual Studio Code](https://code.visualstudio.com/Download)
-    - [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-    - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
-    - [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
-    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-    - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-    - [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
-        - [MySQL/MariaDB Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-mysql)
-        - [PostgreSQL/Cockroach Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg)
-    - [Markdown Plantuml Preview](https://marketplace.visualstudio.com/items?itemName=myml.vscode-markdown-plantuml-preview)
-    - [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
+	- [Visual Studio Code](https://code.visualstudio.com/Download)
+	- [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+	- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager)
+	- [Coverage Gutters](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters)
+	- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+	- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+	- [SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
+		- [MySQL/MariaDB Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.zqltools-driver-mysql)
+		- [PostgreSQL/Cockroach Driver](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg)
+	- [Markdown Plantuml Preview](https://marketplace.visualstudio.com/items?itemName=myml.vscode-markdown-plantuml-preview)
+	- [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
 
 1. Install VritualBox `7.0.6` & extension Pack
     - [VirtualBox](https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6-155176-OSX.dmg)
