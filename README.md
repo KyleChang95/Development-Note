@@ -1,6 +1,4 @@
-# Development_Notes
-
-## Setup Environment
+# Setup Environment
 
 1. Install Visual Studio Code and extensions
 	- [Visual Studio Code](https://code.visualstudio.com/Download)
