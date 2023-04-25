@@ -11,3 +11,8 @@ git submodule deinit -f -- lib/sdpClient
 rm -rf .git/modules/lib/sdpClient
 git rm -f lib/sdpClient
 ```
+
+## Get short commit hash
+```bash
+git rev-parse --short=8 HEAD
+```
