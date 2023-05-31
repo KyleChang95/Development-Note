@@ -32,3 +32,33 @@ mount |grep nas
 # 卸載
 sudo umount /home/vagrant/nas
 ```
+
+## 升級Linux Kernel
+```bash
+# 參考資料
+# https://ubuntu.com/security/CVE-2022-47939
+# https://sysin.org/blog/ubuntu-2004-upgrade-kernel/
+
+# 查詢Kernel當前版本
+uname -r
+# OR
+cat /proc/version_signature
+
+# 查詢OS版本
+lsb_release -a
+
+# 更新apt repository列表和升級套件
+sudo apt update && sudo apt upgrade -y
+
+# 重新開機
+sudo reboot
+
+# 移除舊版本Kernel套件
+sudo apt autoremove -y
+
+# 確認是否有殘留的舊版Kernel和套件
+sudo apt list --installed linux*
+
+# 只能手動刪除
+sudo apt remove -y linux-aws-headers-5.4.0-1045
+```
