@@ -1,6 +1,14 @@
 Linux
 ===
 
+## CPU架構
+- AMD64: 也稱為`x86-64`或`x64`，由AMD開發，被Intel採用
+- ARM64: 也稱為`AArch64`
+```bash
+# 查看CPU架構
+uname -i
+```
+
 ## Command: `find`
 ```bash
 # find {搜尋目錄} {指定檔名}
