@@ -5,10 +5,6 @@ GitHub Copilot
 
 ![](./../image/self-signed%20certificate%20in%20certificate%20chain%20error.png)
 
-> Refrence: 
-> - [Github](https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-certificate-errors-for-github-copilot#handling-certificate-related-errors)
-> - [Stackoverflow](https://stackoverflow.com/a/71973332)
-
 1. Install [win-ca](https://marketplace.visualstudio.com/items?itemName=ukoloff.win-ca) extension and switch to `append` mode.
    ```jsonc
    // settings.json of VSCode
@@ -26,3 +22,7 @@ GitHub Copilot
    sudo mv github-copilot.pem /usr/local/share/ca-certificates/github-copilot.pem
    sudo update-ca-certificates
    ```
+4. Restart VSCode
+5. Refrence
+   - [Github](https://docs.github.com/en/copilot/troubleshooting-github-copilot/troubleshooting-certificate-errors-for-github-copilot#handling-certificate-related-errors)
+   - [Stackoverflow](https://stackoverflow.com/a/71973332)
