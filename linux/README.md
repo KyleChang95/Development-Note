@@ -70,3 +70,19 @@ sudo apt list --installed linux*
 # 只能手動刪除
 sudo apt remove -y linux-aws-headers-5.4.0-1045
 ```
+
+## 安裝.deb
+```bash
+# 下載.deb
+curl -O <url_of_deb>
+# or
+wget <url_of_deb>
+
+# 安裝.deb
+sudo dpkg -i <filename.deb>
+# or
+sudo apt install <filename.deb>
+
+# 卸載 .deb
+sudo apt remove <filename>
+```
