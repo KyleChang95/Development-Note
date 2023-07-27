@@ -14,12 +14,12 @@ GitHub Copilot
    ```
 2. Download self-signed certificate chain that is signed by the company’s own private CA authority
    ```bash
-   echo -n | openssl s_client -connect github.com:443 -showcerts | sed -ne "/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p" > github-copilot.pem
+   echo -n | openssl s_client -connect github.com:443 -showcerts | sed -ne "/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p" > github-copilot.crt
    ```
 3. Add CA certificate to the trusted CA repository
    ```bash
-   sudo chmod 644 github-copilot.pem
-   sudo mv github-copilot.pem /usr/local/share/ca-certificates/github-copilot.pem
+   sudo chmod 644 github-copilot.crt
+   sudo mv github-copilot.crt /usr/local/share/ca-certificates/github-copilot.crt
    sudo update-ca-certificates
    ```
 4. Restart VSCode
