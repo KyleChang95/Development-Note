@@ -86,3 +86,8 @@ sudo apt install <filename.deb>
 # 卸載 .deb
 sudo apt remove <filename>
 ```
+
+## 新增軟連結
+```bash
+ln -s <原始文件或目录路径> <软链接路径>
+```
