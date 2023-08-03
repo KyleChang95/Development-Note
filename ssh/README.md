@@ -55,4 +55,7 @@ Host gitlab
 # Testing if the SSH configuration is successful.
 ```bash
 ssh -T git@github.com
+
+# Use Alias
+ssh -T github
 ```
