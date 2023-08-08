@@ -1,3 +1,8 @@
+# Install MySQL Client
+```bash
+sudo apt update && sudo apt-get install -y mysql-client
+```
+
 # 安裝 MySQL/MariaDB 資料庫
 
 ```shell
