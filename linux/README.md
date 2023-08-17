@@ -91,3 +91,6 @@ sudo apt remove <filename>
 ```bash
 ln -s <原始文件或目录路径> <软链接路径>
 ```
+
+## ls command
+https://blog.gtwang.org/linux/linux-ls-command-tutorial/
