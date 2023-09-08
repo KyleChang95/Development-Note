@@ -92,3 +92,21 @@ export const compareIPDesc = (a: IP, b: IP) => {
   return ip2IntoDecimal - ip1IntoDecimal;
 }
 ```
+
+## Extends multiple interfaces
+```Typescript
+interface A {
+  propA: string;
+}
+
+interface B {
+  propB: number;
+}
+
+interface C extends A, B {}
+
+const myObj: C = {
+  propA: 'hello',
+  propB: 123
+};
+```
