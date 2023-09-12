@@ -13,6 +13,6 @@ nvm version-remote 18 --lts
 nvm install 18 --lts
 
 # If you have multiple Node.js versions installed.
-nvm use 18 --lts
+nvm alias default {18.x.x}
 ```
 
