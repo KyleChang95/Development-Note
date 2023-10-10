@@ -50,3 +50,8 @@ git rm -f lib/sdpClient
 ```bash
 git rev-parse --short=8 HEAD
 ```
+
+# Get remote repository url
+```bash
+git remote -v
+```
