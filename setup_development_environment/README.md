@@ -2,7 +2,7 @@
 
 ## 1. Create a SSH key
 ```bash
-ssh-keygen -t ed25519`
+ssh-keygen -t ed25519
 ```
 
 ## 2. Install VritualBox & Extension Pack
