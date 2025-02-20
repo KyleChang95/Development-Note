@@ -94,3 +94,14 @@ ln -s <原始文件或目录路径> <软链接路径>
 
 ## ls command
 https://blog.gtwang.org/linux/linux-ls-command-tutorial/
+
+## 計算資料夾大小
+```bash
+du -sh /path/to/directory
+
+# 顯示子目錄大小
+du -h --max-depth=1 /path/to/directory
+
+# 顯示子目錄大小，並排序
+du -h --max-depth=1 /path/to/directory | sort -h
+```
