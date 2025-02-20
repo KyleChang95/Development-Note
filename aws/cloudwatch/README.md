@@ -23,12 +23,9 @@
     {
       "agent": {
         "metrics_collection_interval": 60,
-        "run_as_user": "root",
-        "region": "ap-northeast-1",
-        "hostname": "dify"
+        "run_as_user": "root"
       },
       "metrics": {
-        "namespace": "Dify",
         "aggregation_dimensions": [
           [
             "InstanceId"
@@ -38,36 +35,47 @@
           "InstanceId": "${aws:InstanceId}"
         },
         "metrics_collected": {
-          "disk": {
-            "resources": [
-              "/"
-            ],
+          "cpu": {
             "measurement": [
-              "free",
-              "total",
-              "used",
-              "used_percent"
+              "cpu_usage_idle",
+              "cpu_usage_iowait",
+              "cpu_usage_user",
+              "cpu_usage_system"
             ],
-            "metrics_collection_interval": 60
+            "metrics_collection_interval": 60,
+            "resources": [
+              "*"
+            ],
+            "totalcpu": false
+          },
+          "disk": {
+            "measurement": [
+              "used_percent",
+              "inodes_free"
+            ],
+            "metrics_collection_interval": 60,
+            "resources": [
+              "*"
+            ]
           },
           "diskio": {
-            "resources": [
-              "/"
-            ],
             "measurement": [
-              "read_bytes",
-              "write_bytes",
-              "read_time",
-              "write_time"
+              "io_time"
             ],
-            "metrics_collection_interval": 60
+            "metrics_collection_interval": 60,
+            "resources": [
+              "*"
+            ]
           },
           "mem": {
             "measurement": [
-              "free",
-              "total",
-              "used",
-              "used_percent"
+              "mem_used_percent"
+            ],
+            "metrics_collection_interval": 60
+          },
+          "swap": {
+            "measurement": [
+              "swap_used_percent"
             ],
             "metrics_collection_interval": 60
           }
