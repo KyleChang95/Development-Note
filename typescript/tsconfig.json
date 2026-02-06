@@ -1,0 +1,40 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // 檔案位置
+    "rootDir": ".",
+    "outDir": "./dist",
+    "baseUrl": ".",
+
+    // 環境設定
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+
+    // 輸出選項
+    "sourceMap": true, // 生成 .js.map 檔案，方便除錯
+    "declaration": true, // 生成 .d.ts 聲明文件，方便其他 TypeScript 專案使用
+    "declarationMap": true, // 生成 .d.ts 聲明文件，方便其他 TypeScript 專案使用
+
+    // 啟用嚴格模式
+    "noImplicitAny": true, // 禁止隱式的 any 類型，強制明確定義類型，提升程式碼可讀性和維護性
+    "strict": true, // 啟用所有嚴格類型檢查選項，提升程式碼品質並減少 Bug
+    "strictNullChecks": true, // 啟用嚴格的 null 檢查，避免 null 和 undefined 導致的錯誤
+
+    // 嚴格類型檢查選項
+    "noUncheckedIndexedAccess": true, // 強制檢查索引存取，避免未定義的屬性導致錯誤
+    "exactOptionalPropertyTypes": true, // 強制精確的可選屬性類型，避免不必要的 undefined 類型
+
+    // 其他選項
+    "jsx": "react-jsx", // 啟用 React 17+ 的 JSX 轉換，提升效能並減少對 React 的依賴
+    "verbatimModuleSyntax": true, // 強制使用原生 ESM 語法，避免 TypeScript 自動轉換為 CommonJS
+    "isolatedModules": true, // 強制每個檔案都被視為模組，避免全域變數污染
+    "noUncheckedSideEffectImports": true, // 強制檢查副作用導入，提升模組安全性
+    "moduleDetection": "force", // 強制 TypeScript 將所有檔案視為模組，避免全域變數污染
+    "esModuleInterop": true, // 允許 import CommonJS 套件
+    "skipLibCheck": true, // 跳過 node_modules 的型別檢查，加速編譯
+    "forceConsistentCasingInFileNames": true, // 強制檔案名稱大小寫一致，避免在不同作業系統上出現問題
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
