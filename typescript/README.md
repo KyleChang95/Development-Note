@@ -55,9 +55,10 @@
     | typescript  | TypeScript 編譯器               |
     | @types/node | Node.js 的 TypeScript 類型定義   |
     | tsx         | 用於執行 TypeScript 代碼的工具    |
+    | dotenv      | 環境變數管理工具                  |
 
     ```shell
-    npm install --save-dev typescript @types/node tsx
+    npm install --save-dev typescript @types/node tsx dotenv
     ```
 
 3. 初始化 `tsconfig.json` 文件
